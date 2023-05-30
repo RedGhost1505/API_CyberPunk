@@ -1,4 +1,4 @@
-from flask import Flask, render_templeate, jsonify, abort, request
+from flask import Flask, render_template, jsonify, abort, request
 
 uri='/api/productos/'
 app= Flask(__name__)
