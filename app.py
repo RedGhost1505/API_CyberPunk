@@ -7,13 +7,6 @@ cors = CORS(app)
 
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-
-@app.route("/")
-
-@cross_origin()
-
-
-
 products = [
     {
         'id':1,
@@ -32,6 +25,7 @@ products = [
 #Retorna todos los productos
 
 @app.route(uri,methods=['GET'])
+@cross_origin()
 def get_tasks():
     return jsonify({'products': products})
 
@@ -40,6 +34,7 @@ def get_tasks():
 #Post para un nuevo producto 
 
 @app.route(uri,methods=['POST'])
+@cross_origin()
 def create_task():
     if request.json:
         task = {
@@ -58,6 +53,7 @@ def create_task():
 #REMOVE
 
 @app.route(uri+'/<int:id>', methods= ['DELETE'])
+@cross_origin()
 def delete_task(id):
     dele = [key for key in products if key['id']==id]
     if len(dele) == 0:
