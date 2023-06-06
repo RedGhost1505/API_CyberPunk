@@ -39,7 +39,7 @@ def create_task():
     if request.json:
         task = {
             'id': len(products)+1,
-            'imageScr': request.json['imageScr'],
+            'imageSrc': request.json['imageScr'],
             'title':  request.json['title'],
             'content':  request.json['content'],
 
