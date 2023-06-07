@@ -12,13 +12,15 @@ products = [
         'id':1,
         'imageSrc':'https://cdn.quasar.dev/img/parallax2.jpg',
         'title':'Title 1',
-        'content':'Hola'
+        'content':'Hola',
+        'Info':'Info primer producto'
     },
     {
         'id':2,
         'imageSrc':'https://cdn.quasar.dev/img/parallax2.jpg',
         'title':'Title 2',
-        'content':'Hola'
+        'content':'Hola',
+        'Info':'Info segundo producto'
     },
 ]
 
@@ -42,6 +44,7 @@ def create_task():
             'imageSrc': request.json['imageSrc'],
             'title':  request.json['title'],
             'content':  request.json['content'],
+            'Info': request.json['Info']
 
         }
         products.append(task)
