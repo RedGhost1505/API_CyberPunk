@@ -50,7 +50,7 @@ def create_task():
             'content':  request.json['content'],
             'Info': request.json['Info'],
             'icon': 'las la-tshirt',
-            'caption': 'producto' len(products)+1
+            'caption': ('producto',len(products)+1)
             
 
         }
