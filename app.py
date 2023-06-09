@@ -13,7 +13,8 @@ products = [
         'imageSrc':'https://cdn.quasar.dev/img/parallax2.jpg',
         'title':'Title 1',
         'content':'Hola',
-        'Info':'Info primer producto'
+        'Info':'Info primer producto',
+        'icon': 'las la-otter'
     },
     {
         'id':2,
