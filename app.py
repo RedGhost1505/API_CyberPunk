@@ -15,7 +15,8 @@ products = [
         'content':'Hola',
         'Info':'Info primer producto',
         'icon': 'las la-tshirt',
-        'caption': 'Producto 1'
+        'caption': 'Producto 1',
+        'link': 'Template'
     },
     {
         'id':2,
@@ -24,7 +25,8 @@ products = [
         'content':'Hola',
         'Info':'Info segundo producto',
         'icon': 'las la-tshirt',
-        'caption': 'Producto 2'
+        'caption': 'Producto 2',
+        'link': 'Template'
     },
 ]
 
@@ -50,7 +52,8 @@ def create_task():
             'content':  request.json['content'],
             'Info': request.json['Info'],
             'icon': 'las la-tshirt',
-            'caption': 'Producto ' + str(len(products)+1)
+            'caption': 'Producto ' + str(len(products)+1),
+            'link': 'Template'
             
 
         }
